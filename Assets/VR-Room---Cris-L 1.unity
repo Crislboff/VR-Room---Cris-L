@@ -800,7 +800,7 @@ MonoBehaviour:
   selectedRoadRightInnerOffset: 0
   selectedCrossingMaterial: 0
   crossingTextureInfoIndex: 0
-  handleSelection: 3
+  handleSelection: 1
   positionHandleSelection: 1
   markerDirXZ: 0
   defaultCrossing: {fileID: 0}
@@ -1034,16 +1034,15 @@ MonoBehaviour:
   OOCOCQQDQDScript: {fileID: 0}
   ODCOQCQCOOElement: -1
   OQQOCODOOQ: -1
-  OCQCQQDDOO: {fileID: 519853960}
-  ODQCQCQDDQ: {fileID: 519853960}
-  OOQDQCOQOQ: 0
+  OCQCQQDDOO: {fileID: 0}
+  ODQCQCQDDQ: {fileID: 0}
+  OOQDQCOQOQ: -1
   selectedRoadSOMarker: -1
   selectedMarkerNode: -1
   selectedMarkerNodes: 
   selectedMarkerSONode: -1
   selectedMarkerSONodes: 
-  selectedObjects:
-  - {fileID: 1823724047}
+  selectedObjects: []
   selectedExitRoad: -1
   newRoadFlag: 0
   roadTypeUpdateFlag: 1
@@ -33179,23 +33178,6 @@ MonoBehaviour:
   perpDirRotated: {x: 0.9997927, y: 0, z: 0.020361332}
   markerStartUVY: 0.3866577
   customPoints: []
---- !u!114 &1823724047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 561528938, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roadScr: {fileID: 519853960}
-  prefabScr: {fileID: 0}
-  markers: 00000000
-  startEnd: 0
-  prefab: {fileID: 0}
 --- !u!1 &1922960326
 GameObject:
   m_ObjectHideFlags: 0
