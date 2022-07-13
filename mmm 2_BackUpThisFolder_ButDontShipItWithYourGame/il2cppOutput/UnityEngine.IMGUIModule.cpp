@@ -8467,6 +8467,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIContent__ctor_mD2BDF82C1E1F75DEEF36F2
 		return;
 	}
 }
+// System.Void UnityEngine.GUIContent::.ctor(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIContent__ctor_m68E7F8C12A7768D52689E89E1E687F86569A3E78 (GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* __this, String_t* ___text0, String_t* ___tooltip1, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___text0;
+		String_t* L_1 = ___tooltip1;
+		GUIContent__ctor_m3FDFF98EA6ACDC116BCCA705EE8F8DEC09A4A0A7(__this, L_0, (Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700*)NULL, L_1, NULL);
+		return;
+	}
+}
 // System.Void UnityEngine.GUIContent::.ctor(System.String,UnityEngine.Texture,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIContent__ctor_m3FDFF98EA6ACDC116BCCA705EE8F8DEC09A4A0A7 (GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* __this, String_t* ___text0, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___image1, String_t* ___tooltip2, const RuntimeMethod* method) 
 {

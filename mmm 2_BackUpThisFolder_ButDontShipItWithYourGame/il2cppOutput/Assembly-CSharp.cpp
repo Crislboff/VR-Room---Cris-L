@@ -311,6 +311,8 @@ struct BasePoseProvider_t55E2883DF2C8052200284D64B68471636876FA1D;
 struct BaseTeleportationInteractable_t3CA78AC694D6BFBA115E724F2C104AB069449AE8;
 // UnityEngine.Behaviour
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
+// CTI.CTI_CustomWind
+struct CTI_CustomWind_t1CC4C5056F365B4443CD97CE4E49A17B8AEDFCEB;
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 // UnityEngine.Canvas
@@ -581,6 +583,8 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct WaitForFixedUpdate_t86F5BC0B6A668AEF2903DE9ADB52062E457BD1B7;
 // UnityEngine.WaitForSeconds
 struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
+// UnityEngine.WindZone
+struct WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7;
 // UnityEngine.XR.Interaction.Toolkit.XRBaseController
 struct XRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C;
 // UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
@@ -715,10 +719,12 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeClass* VelocityEvent_t4C4EE35B178340BBE790FA2A3EDC7752AD6F42DF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral626EF77ABD00197B9E0E9015CCF21B7E2160F73F;
+IL2CPP_EXTERN_C String_t* _stringLiteral638E4DCC275BB9313993306C16D08FC4F0EC6060;
 IL2CPP_EXTERN_C String_t* _stringLiteral9B4FEEFA76B93D58B6E47CD9FF76F6E287D0D321;
 IL2CPP_EXTERN_C String_t* _stringLiteral9DFB335924F6E8DA7453E5E26AEF40C394666D86;
 IL2CPP_EXTERN_C String_t* _stringLiteralC31E66F919D06AD2730738EF7F884271E99BB7DA;
 IL2CPP_EXTERN_C String_t* _stringLiteralF009B78A50F1102B3DC74DA0FAECC613AA75E457;
+IL2CPP_EXTERN_C String_t* _stringLiteralFEFFB092D6D56F4C67BB6014438181680AA2C8DB;
 IL2CPP_EXTERN_C const RuntimeMethod* BaseTeleportationInteractable_OnActivated_m3519F32AD8EF48DEA2DC762AA0203AC2CA2BF9E7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BaseTeleportationInteractable_OnDeactivated_mCC3F748F7269D8A30EED80532E054CF274283D4E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BaseTeleportationInteractable_OnSelectEntered_m0FD58F8C469202E81555C08B4362E2D23B620676_RuntimeMethod_var;
@@ -735,6 +741,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisParticleSystem_tB
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisVideoPlayer_t48EA4A8117B822BC59590150DED9AD46C62F65D3_m19D8A3EC4A0BF3BDAFCF718B25FC119EFE6F6BBA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisWindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7_mB17E450C85C27FCE059C77DBDA88C3441A1D0D92_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisXRBaseControllerInteractor_t718A447F8F3D646B51B42E1FAFEA2C1A1EF1C66E_m6B958DEC1174651AD374B68D4DAA338F700A9B6C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisXRBaseInteractor_tB48889E8D95695ABF46D2012EC55EA660103D158_m088F2113B7849794EAF31AF1D03D29BFDDC29316_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisXRController_t928E104C899E51FDE12C0A8AC68874587C46C28F_m125A78A2B11A8DC4E549B5275CFECD06A2B5B287_RuntimeMethod_var;
@@ -976,6 +983,11 @@ struct BaseInteractionEventArgs_t8B38B6C63C6C9EA4BD179EF5FD40106872B82D7E  : pub
 	RuntimeObject* ___U3CinteractorObjectU3Ek__BackingField_0;
 	// UnityEngine.XR.Interaction.Toolkit.IXRInteractable UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs::<interactableObject>k__BackingField
 	RuntimeObject* ___U3CinteractableObjectU3Ek__BackingField_1;
+};
+
+// CTI.CTI_Utils
+struct CTI_Utils_t613F032BD08876B63E0CB2A436C73371F97A94DC  : public RuntimeObject
+{
 };
 
 // System.String
@@ -2743,6 +2755,11 @@ struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t
 {
 };
 
+// UnityEngine.WindZone
+struct WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+
 // TMPro.WordWrapState
 struct WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A 
 {
@@ -3142,6 +3159,25 @@ struct ApplyPhysics_tAE3C26379247A0E3445B10AD7C7472826A2E5D96  : public MonoBeha
 // UnityEngine.AudioSource
 struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299  : public AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941
 {
+};
+
+// CTI.CTI_CustomWind
+struct CTI_CustomWind_t1CC4C5056F365B4443CD97CE4E49A17B8AEDFCEB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.WindZone CTI.CTI_CustomWind::m_WindZone
+	WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* ___m_WindZone_4;
+	// UnityEngine.Vector3 CTI.CTI_CustomWind::WindDirection
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___WindDirection_5;
+	// System.Single CTI.CTI_CustomWind::WindStrength
+	float ___WindStrength_6;
+	// System.Single CTI.CTI_CustomWind::WindTurbulence
+	float ___WindTurbulence_7;
+	// System.Single CTI.CTI_CustomWind::WindMultiplier
+	float ___WindMultiplier_8;
+	// System.Boolean CTI.CTI_CustomWind::init
+	bool ___init_9;
+	// System.Int32 CTI.CTI_CustomWind::TerrainLODWindPID
+	int32_t ___TerrainLODWindPID_10;
 };
 
 // ChangeMaterial
@@ -6245,6 +6281,35 @@ inline RuntimeObject* TeleportAreaWithFade_FadeSequence_TisDeactivateEventArgs_t
 }
 // System.Void UnityEngine.XR.Interaction.Toolkit.TeleportationArea::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportationArea__ctor_mBD0DD39D29BA373207C79E8600D8F183D3E14EFB (TeleportationArea_t4E760401D8B7EBAA17DD75E248517C0ECBB608FD* __this, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<UnityEngine.WindZone>()
+inline WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* Component_GetComponent_TisWindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7_mB17E450C85C27FCE059C77DBDA88C3441A1D0D92 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// System.Int32 UnityEngine.Shader::PropertyToID(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Shader_PropertyToID_mF5F7BA2EFF23D83482ECDE4C34227145D817B1EB (String_t* ___name0, const RuntimeMethod* method) ;
+// System.Void CTI.CTI_CustomWind::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CTI_CustomWind_Update_m241F192D847D1A1544A94873D5D5A2BED6E85C82 (CTI_CustomWind_t1CC4C5056F365B4443CD97CE4E49A17B8AEDFCEB* __this, const RuntimeMethod* method) ;
+// System.Void CTI.CTI_CustomWind::Init()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CTI_CustomWind_Init_m9DC16D82B7A5EEE46C3FCF561138B71A77382712 (CTI_CustomWind_t1CC4C5056F365B4443CD97CE4E49A17B8AEDFCEB* __this, const RuntimeMethod* method) ;
+// System.Single UnityEngine.WindZone::get_windMain()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WindZone_get_windMain_m49480166CDE759C98498B951148535FCCED788C0 (WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* __this, const RuntimeMethod* method) ;
+// System.Single UnityEngine.WindZone::get_windPulseMagnitude()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WindZone_get_windPulseMagnitude_m6166F0CA589D120036D01F796DBE7201EE2A4724 (WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* __this, const RuntimeMethod* method) ;
+// System.Single UnityEngine.WindZone::get_windPulseFrequency()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WindZone_get_windPulseFrequency_mE95A49751644837A6668834E41F76D66C7E8173C (WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* __this, const RuntimeMethod* method) ;
+// System.Single UnityEngine.WindZone::get_windTurbulence()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WindZone_get_windTurbulence_mB7D83DE60E30847971D13C6601C46F14839F8448 (WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Vector4::.ctor(System.Single,System.Single,System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* __this, float ___x0, float ___y1, float ___z2, float ___w3, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Shader::SetGlobalVector(System.Int32,UnityEngine.Vector4)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Shader_SetGlobalVector_m8A7D161EE6CD6D21EAEC6A70E30B5E0897F5A84E (int32_t ___nameID0, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___value1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) ;
+// UnityEngine.Vector4 UnityEngine.Vector4::op_Implicit(UnityEngine.Vector2)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Vector4_op_Implicit_m6162D8136CFE97A5A8BD3B764F9074DB96AA5CD0_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___v0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Shader::SetGlobalVector(System.String,UnityEngine.Vector4)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Shader_SetGlobalVector_m885C9E39C787CA6F54E002C12E3D4280C353E438 (String_t* ___name0, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___value1, const RuntimeMethod* method) ;
 // UnityEngine.Color UnityEngine.Color::HSVToRGB(System.Single,System.Single,System.Single,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_HSVToRGB_mE35BBC0ADCBAA2E71E90C080D7A8A4A19AABCC74 (float ___H0, float ___S1, float ___V2, bool ___hdr3, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
@@ -16027,6 +16092,237 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportAreaWithFade__ctor_mCBF06B284579
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void CTI.CTI_CustomWind::Init()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CTI_CustomWind_Init_m9DC16D82B7A5EEE46C3FCF561138B71A77382712 (CTI_CustomWind_t1CC4C5056F365B4443CD97CE4E49A17B8AEDFCEB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisWindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7_mB17E450C85C27FCE059C77DBDA88C3441A1D0D92_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral638E4DCC275BB9313993306C16D08FC4F0EC6060);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// m_WindZone = GetComponent<WindZone>();
+		WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* L_0;
+		L_0 = Component_GetComponent_TisWindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7_mB17E450C85C27FCE059C77DBDA88C3441A1D0D92(__this, Component_GetComponent_TisWindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7_mB17E450C85C27FCE059C77DBDA88C3441A1D0D92_RuntimeMethod_var);
+		__this->___m_WindZone_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_WindZone_4), (void*)L_0);
+		// TerrainLODWindPID = Shader.PropertyToID("_TerrainLODWind");
+		int32_t L_1;
+		L_1 = Shader_PropertyToID_mF5F7BA2EFF23D83482ECDE4C34227145D817B1EB(_stringLiteral638E4DCC275BB9313993306C16D08FC4F0EC6060, NULL);
+		__this->___TerrainLODWindPID_10 = L_1;
+		// }
+		return;
+	}
+}
+// System.Void CTI.CTI_CustomWind::OnValidate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CTI_CustomWind_OnValidate_m5CB2A9DC5B4B23A4850D39B15A53078D296FDA65 (CTI_CustomWind_t1CC4C5056F365B4443CD97CE4E49A17B8AEDFCEB* __this, const RuntimeMethod* method) 
+{
+	{
+		// Update ();
+		CTI_CustomWind_Update_m241F192D847D1A1544A94873D5D5A2BED6E85C82(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void CTI.CTI_CustomWind::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CTI_CustomWind_Update_m241F192D847D1A1544A94873D5D5A2BED6E85C82 (CTI_CustomWind_t1CC4C5056F365B4443CD97CE4E49A17B8AEDFCEB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisWindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7_mB17E450C85C27FCE059C77DBDA88C3441A1D0D92_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (!init) {
+		bool L_0 = __this->___init_9;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		// Init ();
+		CTI_CustomWind_Init_m9DC16D82B7A5EEE46C3FCF561138B71A77382712(__this, NULL);
+	}
+
+IL_000e:
+	{
+		// WindDirection = this.transform.forward;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_1, NULL);
+		__this->___WindDirection_5 = L_2;
+		// if(m_WindZone == null) {
+		WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* L_3 = __this->___m_WindZone_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Equality_mD3DB0D72CE0250C84033DC2A90AEF9D59896E536(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		// m_WindZone = GetComponent<WindZone>();
+		WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* L_5;
+		L_5 = Component_GetComponent_TisWindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7_mB17E450C85C27FCE059C77DBDA88C3441A1D0D92(__this, Component_GetComponent_TisWindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7_mB17E450C85C27FCE059C77DBDA88C3441A1D0D92_RuntimeMethod_var);
+		__this->___m_WindZone_4 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_WindZone_4), (void*)L_5);
+	}
+
+IL_0039:
+	{
+		// WindStrength = m_WindZone.windMain * WindMultiplier;
+		WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* L_6 = __this->___m_WindZone_4;
+		NullCheck(L_6);
+		float L_7;
+		L_7 = WindZone_get_windMain_m49480166CDE759C98498B951148535FCCED788C0(L_6, NULL);
+		float L_8 = __this->___WindMultiplier_8;
+		__this->___WindStrength_6 = ((float)il2cpp_codegen_multiply(L_7, L_8));
+		// WindStrength += m_WindZone.windPulseMagnitude * (1.0f + Mathf.Sin(Time.time * m_WindZone.windPulseFrequency) + 1.0f + Mathf.Sin(Time.time * m_WindZone.windPulseFrequency * 3.0f) ) * 0.5f;
+		float L_9 = __this->___WindStrength_6;
+		WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* L_10 = __this->___m_WindZone_4;
+		NullCheck(L_10);
+		float L_11;
+		L_11 = WindZone_get_windPulseMagnitude_m6166F0CA589D120036D01F796DBE7201EE2A4724(L_10, NULL);
+		float L_12;
+		L_12 = Time_get_time_m0BEE9AACD0723FE414465B77C9C64D12263675F3(NULL);
+		WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* L_13 = __this->___m_WindZone_4;
+		NullCheck(L_13);
+		float L_14;
+		L_14 = WindZone_get_windPulseFrequency_mE95A49751644837A6668834E41F76D66C7E8173C(L_13, NULL);
+		float L_15;
+		L_15 = sinf(((float)il2cpp_codegen_multiply(L_12, L_14)));
+		float L_16;
+		L_16 = Time_get_time_m0BEE9AACD0723FE414465B77C9C64D12263675F3(NULL);
+		WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* L_17 = __this->___m_WindZone_4;
+		NullCheck(L_17);
+		float L_18;
+		L_18 = WindZone_get_windPulseFrequency_mE95A49751644837A6668834E41F76D66C7E8173C(L_17, NULL);
+		float L_19;
+		L_19 = sinf(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_16, L_18)), (3.0f))));
+		__this->___WindStrength_6 = ((float)il2cpp_codegen_add(L_9, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_11, ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add((1.0f), L_15)), (1.0f))), L_19)))), (0.5f)))));
+		// WindTurbulence = m_WindZone.windTurbulence * m_WindZone.windMain * WindMultiplier;
+		WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* L_20 = __this->___m_WindZone_4;
+		NullCheck(L_20);
+		float L_21;
+		L_21 = WindZone_get_windTurbulence_mB7D83DE60E30847971D13C6601C46F14839F8448(L_20, NULL);
+		WindZone_t7946C428D1DA3C255DCDC832A39B871EDC1315A7* L_22 = __this->___m_WindZone_4;
+		NullCheck(L_22);
+		float L_23;
+		L_23 = WindZone_get_windMain_m49480166CDE759C98498B951148535FCCED788C0(L_22, NULL);
+		float L_24 = __this->___WindMultiplier_8;
+		__this->___WindTurbulence_7 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_21, L_23)), L_24));
+		// WindDirection.x *= WindStrength;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_25 = (&__this->___WindDirection_5);
+		float* L_26 = (&L_25->___x_2);
+		float* L_27 = L_26;
+		float L_28 = *((float*)L_27);
+		float L_29 = __this->___WindStrength_6;
+		*((float*)L_27) = (float)((float)il2cpp_codegen_multiply(L_28, L_29));
+		// WindDirection.y *= WindStrength;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_30 = (&__this->___WindDirection_5);
+		float* L_31 = (&L_30->___y_3);
+		float* L_32 = L_31;
+		float L_33 = *((float*)L_32);
+		float L_34 = __this->___WindStrength_6;
+		*((float*)L_32) = (float)((float)il2cpp_codegen_multiply(L_33, L_34));
+		// WindDirection.z *= WindStrength;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_35 = (&__this->___WindDirection_5);
+		float* L_36 = (&L_35->___z_4);
+		float* L_37 = L_36;
+		float L_38 = *((float*)L_37);
+		float L_39 = __this->___WindStrength_6;
+		*((float*)L_37) = (float)((float)il2cpp_codegen_multiply(L_38, L_39));
+		// Shader.SetGlobalVector(TerrainLODWindPID, new Vector4(WindDirection.x, WindDirection.y, WindDirection.z, WindTurbulence) );
+		int32_t L_40 = __this->___TerrainLODWindPID_10;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_41 = (&__this->___WindDirection_5);
+		float L_42 = L_41->___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_43 = (&__this->___WindDirection_5);
+		float L_44 = L_43->___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_45 = (&__this->___WindDirection_5);
+		float L_46 = L_45->___z_4;
+		float L_47 = __this->___WindTurbulence_7;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_48;
+		memset((&L_48), 0, sizeof(L_48));
+		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_48), L_42, L_44, L_46, L_47, /*hidden argument*/NULL);
+		Shader_SetGlobalVector_m8A7D161EE6CD6D21EAEC6A70E30B5E0897F5A84E(L_40, L_48, NULL);
+		// }
+		return;
+	}
+}
+// System.Void CTI.CTI_CustomWind::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CTI_CustomWind__ctor_m0BE15B2CB889E8B7DF985C6ABCF0DB0B0F32A736 (CTI_CustomWind_t1CC4C5056F365B4443CD97CE4E49A17B8AEDFCEB* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float WindMultiplier = 1.0f;
+		__this->___WindMultiplier_8 = (1.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void CTI.CTI_Utils::SetTranslucentLightingFade(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CTI_Utils_SetTranslucentLightingFade_mC404A80C098E5F345D71D098CBD195496BDEF825 (float ___TranslucentLightingRange0, float ___FadeLengthFactor1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFEFFB092D6D56F4C67BB6014438181680AA2C8DB);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		// TranslucentLightingRange *= 0.9f; // Add some padding as real time shadows fade out as well
+		float L_0 = ___TranslucentLightingRange0;
+		___TranslucentLightingRange0 = ((float)il2cpp_codegen_multiply(L_0, (0.899999976f)));
+		// var FadeLength = TranslucentLightingRange * FadeLengthFactor;
+		float L_1 = ___TranslucentLightingRange0;
+		float L_2 = ___FadeLengthFactor1;
+		V_0 = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		// Shader.SetGlobalVector ("_CTI_TransFade",
+		//     new Vector2(
+		//         TranslucentLightingRange * TranslucentLightingRange,
+		//         FadeLength * FadeLength * ( (TranslucentLightingRange / FadeLength) * 2.0f )
+		//     )
+		// );
+		float L_3 = ___TranslucentLightingRange0;
+		float L_4 = ___TranslucentLightingRange0;
+		float L_5 = V_0;
+		float L_6 = V_0;
+		float L_7 = ___TranslucentLightingRange0;
+		float L_8 = V_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_9), ((float)il2cpp_codegen_multiply(L_3, L_4)), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_5, L_6)), ((float)il2cpp_codegen_multiply(((float)(L_7/L_8)), (2.0f))))), /*hidden argument*/NULL);
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_10;
+		L_10 = Vector4_op_Implicit_m6162D8136CFE97A5A8BD3B764F9074DB96AA5CD0_inline(L_9, NULL);
+		Shader_SetGlobalVector_m885C9E39C787CA6F54E002C12E3D4280C353E438(_stringLiteralFEFFB092D6D56F4C67BB6014438181680AA2C8DB, L_10, NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_m154E404AF275A3B2EC99ECAA3879B4CB9F0606DC_inline (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -17083,6 +17379,52 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BaseTeleportationInteract
 		// get => m_TeleportTrigger;
 		int32_t L_0 = __this->___m_TeleportTrigger_44;
 		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* __this, float ___x0, float ___y1, float ___z2, float ___w3, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___x0;
+		__this->___x_1 = L_0;
+		float L_1 = ___y1;
+		__this->___y_2 = L_1;
+		float L_2 = ___z2;
+		__this->___z_3 = L_2;
+		float L_3 = ___w3;
+		__this->___w_4 = L_3;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___x0;
+		__this->___x_0 = L_0;
+		float L_1 = ___y1;
+		__this->___y_1 = L_1;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Vector4_op_Implicit_m6162D8136CFE97A5A8BD3B764F9074DB96AA5CD0_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___v0, const RuntimeMethod* method) 
+{
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___v0;
+		float L_1 = L_0.___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___v0;
+		float L_3 = L_2.___y_1;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_4;
+		memset((&L_4), 0, sizeof(L_4));
+		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_4), L_1, L_3, (0.0f), (0.0f), /*hidden argument*/NULL);
+		V_0 = L_4;
+		goto IL_001f;
+	}
+
+IL_001f:
+	{
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_5 = V_0;
+		return L_5;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_gshared_inline (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___item0, const RuntimeMethod* method) 

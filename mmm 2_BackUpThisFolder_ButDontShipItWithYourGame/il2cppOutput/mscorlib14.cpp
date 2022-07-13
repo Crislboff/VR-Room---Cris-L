@@ -24380,6 +24380,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinaryWriter_Dispose_m62A1213D09FA2598A6
 		return;
 	}
 }
+// System.IO.Stream System.IO.BinaryWriter::get_BaseStream()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* BinaryWriter_get_BaseStream_m98D90BFA7BCBDA6F33F70DA96EF03980CBDE8BFB (BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* __this, const RuntimeMethod* method) 
+{
+	{
+		VirtualActionInvoker0::Invoke(7 /* System.Void System.IO.BinaryWriter::Flush() */, __this);
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = __this->___OutStream_1;
+		return L_0;
+	}
+}
 // System.Void System.IO.BinaryWriter::Flush()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinaryWriter_Flush_m191E03B9EEA18D904F957B7AEC4824CA9868A1C2 (BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* __this, const RuntimeMethod* method) 
 {
@@ -25086,7 +25095,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinaryWriter_Write7BitEncodedInt_m4E635B
 IL_0004:
 	{
 		uint32_t L_1 = V_0;
-		VirtualActionInvoker1< uint8_t >::Invoke(8 /* System.Void System.IO.BinaryWriter::Write(System.Byte) */, __this, (uint8_t)((int32_t)(uint8_t)((int32_t)((int32_t)L_1|((int32_t)128)))));
+		VirtualActionInvoker1< uint8_t >::Invoke(9 /* System.Void System.IO.BinaryWriter::Write(System.Byte) */, __this, (uint8_t)((int32_t)(uint8_t)((int32_t)((int32_t)L_1|((int32_t)128)))));
 		uint32_t L_2 = V_0;
 		V_0 = ((int32_t)((uint32_t)L_2>>7));
 	}
@@ -25101,7 +25110,7 @@ IL_0016:
 	}
 	{
 		uint32_t L_4 = V_0;
-		VirtualActionInvoker1< uint8_t >::Invoke(8 /* System.Void System.IO.BinaryWriter::Write(System.Byte) */, __this, (uint8_t)((int32_t)(uint8_t)L_4));
+		VirtualActionInvoker1< uint8_t >::Invoke(9 /* System.Void System.IO.BinaryWriter::Write(System.Byte) */, __this, (uint8_t)((int32_t)(uint8_t)L_4));
 		return;
 	}
 }
