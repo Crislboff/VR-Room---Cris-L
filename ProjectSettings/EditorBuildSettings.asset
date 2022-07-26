@@ -8,12 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/CrisVR1.unity
     guid: 1c5627ce33b134e9db03128186e428b3
-  - enabled: 1
-    path: Assets/CrisVR2.unity
-    guid: 8f0b924255d1c45aea650beba2a6687f
-  - enabled: 1
-    path: Assets/CrisVR3.unity
-    guid: fdf8701bacf47487a9b52a54c97d7655
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ed72be55522c8448bae8b0d66fa21adf,
       type: 2}
