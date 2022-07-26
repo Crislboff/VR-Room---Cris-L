@@ -5,16 +5,11 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public GameObject itemContainer;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject randomItem = itemContainer.transform.GetChild(Random.Range(0, itemContainer.transform.childCount)).gameObject;
+        randomItem.transform.localScale = Vector3.one * 0.5f;
     }
 }
